@@ -117,6 +117,8 @@ call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 call s:h("Cursor",        {"bg": s:blue, "fg": s:bg_bright})
 call s:h("Comment",       {"fg": s:norm_subtle, "gui": s:maybe_italic(""), "cterm": s:maybe_italic("")})
 
+call s:h("EndOfBuffer",   {"fg": s:bg, "bg": s:bg})
+
 call s:h("Constant",      {"fg": s:yellow})
 hi! link String           Constant
 hi! link Character        Constant
@@ -179,7 +181,7 @@ hi! link ModeMsg MoreMsg
 call s:h("LineNr",        {"fg": s:space4, "bg": s:bg_dark})
 hi LineNr guibg=NONE ctermbg=NONE
 
-call s:h("CursorLineNr",  {"bg": s:bg_dark, "fg": s:blue, "gui": "bold"})
+call s:h("CursorLineNr",  {"bg": s:bg, "fg": s:blue, "gui": "bold"})
 call s:h("Question",      {"fg": s:red})
 call s:h("StatusLine",    {"bg": s:bg, "fg": s:norm})
 call s:h("Conceal",       {"fg": s:norm})
@@ -216,7 +218,7 @@ call s:h("TabLine",       {"fg": s:norm, "bg": s:bg})
 call s:h("TabLineSel",    {"fg": s:bg_dark, "bg": s:cyan, "gui": "bold", "cterm": "bold"})
 call s:h("TabLineFill",   {"fg": s:norm_subtle, "bg": s:bg})
 call s:h("CursorColumn",  {"bg": s:bg_dark})
-call s:h("CursorLine",    {"bg": s:bg_dark})
+call s:h("CursorLine",    {"bg": s:bg})
 call s:h("ColorColumn",   {"bg": s:bg_dark})
 
 " == PLUGIN SUPPORT GROUPS ==
