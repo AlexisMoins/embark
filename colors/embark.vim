@@ -221,8 +221,9 @@ call s:h("CursorColumn",  {"bg": s:bg_dark})
 call s:h("CursorLine",    {"bg": s:bg})
 call s:h("ColorColumn",   {"bg": s:bg_dark})
 
-call s:h("User1",         {"fg": s:red})
-call s:h("User2",         {"fg": s:purple})
+call s:h("User1",         {"fg": s:green})
+call s:h("User2",         {"fg": s:red})
+call s:h("User3",         {"fg": s:purple})
 
 " == PLUGIN SUPPORT GROUPS ==
 "
