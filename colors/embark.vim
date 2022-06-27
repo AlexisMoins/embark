@@ -181,7 +181,7 @@ hi! link ModeMsg MoreMsg
 call s:h("LineNr",        {"fg": s:space4, "bg": s:bg_dark})
 hi LineNr guibg=NONE ctermbg=NONE
 
-call s:h("CursorLineNr",  {"bg": s:bg, "fg": s:blue, "gui": "bold"})
+call s:h("CursorLineNr",  {"bg": s:bg, "fg": s:norm})
 call s:h("Question",      {"fg": s:red})
 call s:h("StatusLine",    {"bg": s:bg, "fg": s:norm})
 call s:h("Conceal",       {"fg": s:norm})
@@ -191,7 +191,7 @@ call s:h("Title",         {"fg": s:dark_blue})
 call s:h("Visual",        {"bg": s:visual})
 call s:h("WarningMsg",    {"fg": s:yellow})
 call s:h("WildMenu",      {"fg": s:bg_dark, "bg": s:cyan})
-call s:h("Folded",        {"fg": s:dark_purple})
+hi! link Folded Comment
 call s:h("FoldColumn",    {"fg": s:yellow})
 call s:h("DiffAdd",       {"fg": s:bg, "bg": s:dark_green})
 call s:h("DiffDelete",    {"fg": s:bg, "bg": s:red})
@@ -375,8 +375,8 @@ hi link DiagnosticFloatingInfo DiagnosticSignInfo
 hi link DiagnosticFloatingWarn DiagnosticSignWarn
 hi link DiagnosticFloatingError DiagnosticSignError
 call s:h("DiagnosticUnderlineHint", {"cterm": "undercurl", "gui": "undercurl", "fg": s:purple})
-call s:h("DiagnosticUnderlineInfo", {"cterm": "undercurl", "gui": "undercurl", "fg": s:blue})
 call s:h("DiagnosticUnderlineWarn", {"cterm": "undercurl", "gui": "undercurl", "fg": s:yellow})
+call s:h("DiagnosticUnderlineInfo", {"cterm": "undercurl", "gui": "undercurl", "fg": s:blue})
 call s:h("DiagnosticUnderlineError", {"cterm": "undercurl", "gui": "undercurl", "fg": s:red})
 
 " Telescope support
