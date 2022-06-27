@@ -176,7 +176,7 @@ call s:h("ErrorMsg",      {"fg": s:dark_red})
 call s:h("IncSearch",     {"bg": s:yellow, "fg": s:bg})
 call s:h("Search",        {"bg": s:dark_yellow, "fg": s:bg})
 call s:h("MoreMsg",       {"fg": s:norm_subtle, "gui": "bold", "cterm": "bold"})
-hi! link ModeMsg MoreMsg
+call s:h("ModeMsg",       {"fg": s:green})
 
 call s:h("LineNr",        {"fg": s:space4, "bg": s:bg_dark})
 hi LineNr guibg=NONE ctermbg=NONE
@@ -220,6 +220,9 @@ call s:h("TabLineFill",   {"fg": s:norm_subtle, "bg": s:bg})
 call s:h("CursorColumn",  {"bg": s:bg_dark})
 call s:h("CursorLine",    {"bg": s:bg})
 call s:h("ColorColumn",   {"bg": s:bg_dark})
+
+call s:h("User1",         {"fg": s:red})
+call s:h("User2",         {"fg": s:purple})
 
 " == PLUGIN SUPPORT GROUPS ==
 "
@@ -361,10 +364,10 @@ call s:h("NERDTreeFlags", {"fg": s:green})
 "
 " Default Diagnostic highlights
 " Dark background for virtual text
-call s:h("DiagnosticHint", { "fg": s:purple, "bg": s:bg_dark })
-call s:h("DiagnosticInfo", { "fg": s:blue, "bg": s:bg_dark })
-call s:h("DiagnosticWarn", { "fg": s:yellow, "bg": s:bg_dark })
-call s:h("DiagnosticError", { "fg": s:red, "bg": s:bg_dark })
+call s:h("DiagnosticHint", { "fg": s:purple })
+call s:h("DiagnosticInfo", { "fg": s:blue })
+call s:h("DiagnosticWarn", { "fg": s:yellow })
+call s:h("DiagnosticError", { "fg": s:red })
 " For signs and floating menus drop the dark background
 call s:h("DiagnosticSignHint", { "fg": s:purple })
 call s:h("DiagnosticSignWarn", { "fg": s:yellow })
