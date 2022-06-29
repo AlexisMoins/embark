@@ -343,7 +343,7 @@ hi link SignifySignDelete           LineNr
 hi link SignifySignChange           LineNr
 call s:h("GitGutterAdd",{"fg": s:green, "bg": s:bg})
 call s:h("GitGutterDelete",{"fg": s:red, "bg": s:bg})
-call s:h("GitGutterChange",{"fg": s:yellow, "bg": s:bg})
+call s:h("GitGutterChange",{"fg": s:purple, "bg": s:bg})
 call s:h("GitGutterChangeDelete",{"fg": s:red, "bg": s:bg})
 
 " Ale
