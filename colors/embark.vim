@@ -53,8 +53,8 @@ let s:dark_blue = { "gui": "#65b2ff", "cterm": "75", "cterm16": "12"}
 let s:purple = { "gui": "#d4bfff", "cterm": "141", "cterm16": "5"}
 let s:dark_purple = { "gui": "#a37acc", "cterm": "135", "cterm16": "13"}
 
-let s:cyan = { "gui": "#87DFEB", "cterm": "122", "cterm16": "6"}
-let s:dark_cyan = { "gui": "#63f2f1", "cterm": "121", "cterm16": "14"}
+let s:cyan = { "gui": "#9cefff", "cterm": "122", "cterm16": "6"}
+let s:dark_cyan = { "gui": "#9cefff", "cterm": "121", "cterm16": "14"}
 
 let s:bg              = s:space1
 let s:bg_dark       = s:space0
@@ -134,7 +134,7 @@ call s:h("Label",        {"fg": s:dark_blue})
 hi! link Conditonal       Statement
 hi! link Exception        Statement
 
-call s:h("Operator",     {"fg": s:dark_cyan})
+call s:h("Operator",     {"fg": s:blue})
 hi! link Repeat           Operator
 
 call s:h("PreProc",       {"fg": s:green})
@@ -151,7 +151,7 @@ hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
 
-call s:h("Special",       {"fg": s:cyan})
+call s:h("Special",       {"fg": s:astral1})
 hi! link SpecialChar      Special
 hi! link Tag              Special
 hi! link Delimiter        Special
@@ -214,8 +214,8 @@ call s:h("Pmenu",         {"fg": s:norm, "bg": s:space2})
 call s:h("PmenuSel",      {"fg": s:purple, "bg": s:bg})
 call s:h("PmenuSbar",     {"fg": s:norm, "bg": s:bg_dark})
 call s:h("PmenuThumb",    {"fg": s:norm, "bg": s:bg_dark})
-call s:h("TabLine",       {"fg": s:norm, "bg": s:bg})
-call s:h("TabLineSel",    {"fg": s:bg_dark, "bg": s:cyan, "gui": "bold", "cterm": "bold"})
+call s:h("TabLine",       {"fg": s:norm_subtle, "bg": s:bg})
+call s:h("TabLineSel",    {"fg": s:norm, "bg": s:bg, "gui": "bold", "cterm": "bold"})
 call s:h("TabLineFill",   {"fg": s:norm_subtle, "bg": s:bg})
 call s:h("CursorColumn",  {"bg": s:bg_dark})
 call s:h("CursorLine",    {"bg": s:bg})
