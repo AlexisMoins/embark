@@ -403,6 +403,8 @@ hi link CmpItemMenu Comment
 hi link CmpItemKindDefault Identifier
 hi link CmpItemAbbrMatch Pmenu
 
+hi! link TSFuncBuiltin TSFunction
+
 " nvim terminal colors
 let g:terminal_color_0 = s:bg_bright.gui
 let g:terminal_color_1 = s:red.gui
