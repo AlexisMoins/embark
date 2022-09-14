@@ -403,6 +403,8 @@ hi link CmpItemMenu Comment
 hi link CmpItemKindDefault Identifier
 hi link CmpItemAbbrMatch Pmenu
 
+hi! link TSTag Function
+hi! link TSTitle Normal
 hi! link TSFuncBuiltin TSFunction
 
 " nvim terminal colors
