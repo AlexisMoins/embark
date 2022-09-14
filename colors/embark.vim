@@ -405,6 +405,8 @@ hi link CmpItemAbbrMatch Pmenu
 
 hi! link TSTag Function
 hi! link TSTitle Normal
+hi! link TSTagDelimiter Type
+
 hi! link TSFuncBuiltin TSFunction
 
 " nvim terminal colors
